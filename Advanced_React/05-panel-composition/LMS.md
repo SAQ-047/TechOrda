@@ -80,12 +80,14 @@ Preview: http://127.0.0.1:4177/.
     "dev:03": "npm run dev --workspace=03-input-transition",
     "dev:04": "npm run dev --workspace=04-deferred-results",
     "dev:05": "npm run dev --workspace=05-panel-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
     "build": "npm run build --workspaces",
     "preview:01": "npm run preview --workspace=01-render-commit",
     "preview:02": "npm run preview --workspace=02-render-purity",
     "preview:03": "npm run preview --workspace=03-input-transition",
     "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition"
+    "preview:05": "npm run preview --workspace=05-panel-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
   },
   "dependencies": {
     "react": "19.3.1",
