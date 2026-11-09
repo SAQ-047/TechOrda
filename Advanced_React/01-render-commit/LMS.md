@@ -64,9 +64,11 @@ npm run preview:01
   "scripts": {
     "dev:01": "npm run dev --workspace=01-render-commit",
     "dev:02": "npm run dev --workspace=02-render-purity",
+    "dev:03": "npm run dev --workspace=03-input-transition",
     "build": "npm run build --workspaces",
     "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity"
+    "preview:02": "npm run preview --workspace=02-render-purity",
+    "preview:03": "npm run preview --workspace=03-input-transition"
   },
   "dependencies": {
     "react": "19.3.1",

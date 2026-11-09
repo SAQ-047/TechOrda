@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-09",
+  "browser": "152.0.7977.83",
+  "build": "production",
+  "cpuSlowdown": 6,
+  "items": 240,
+  "iterationsPerVisibleCard": 80000,
+  "warmup": "CSS, then clear",
+  "sequencePerTrial": "clear, type React without intentional delay, wait for list, clear",
+  "measurement": "input event capture to MutationObserver notification for committed React text output; milliseconds, not paint or total list time",
+  "modes": [
+    {
+      "mode": "normal",
+      "cpuSlowdown": 6,
+      "trials": 3,
+      "trustedInputEvents": 15,
+      "medianInputToTextCommitMs": 45.3,
+      "pendingSeen": false,
+      "separatedSnapshots": 0,
+      "finalQuery": "React",
+      "finalCount": 80,
+      "inputToTextCommitMsByTrial": [
+        [
+          100.8,
+          52.6,
+          45.3,
+          44.7,
+          44.7
+        ],
+        [
+          90.8,
+          50.9,
+          44.6,
+          44.7,
+          44.2
+        ],
+        [
+          92.7,
+          47.3,
+          45.4,
+          44.4,
+          44.9
+        ]
+      ],
+      "firstTrialSnapshots": [
+        {
+          "text": "R",
+          "query": "R",
+          "pending": false
+        },
+        {
+          "text": "Re",
+          "query": "Re",
+          "pending": false
+        },
+        {
+          "text": "Rea",
+          "query": "Rea",
+          "pending": false
+        },
+        {
+          "text": "Reac",
+          "query": "Reac",
+          "pending": false
+        },
+        {
+          "text": "React",
+          "query": "React",
+          "pending": false
+        }
+      ]
+    },
+    {
+      "mode": "transition",
+      "cpuSlowdown": 6,
+      "trials": 3,
+      "trustedInputEvents": 15,
+      "medianInputToTextCommitMs": 1.9,
+      "pendingSeen": true,
+      "separatedSnapshots": 15,
+      "finalQuery": "React",
+      "finalCount": 80,
+      "inputToTextCommitMsByTrial": [
+        [
+          3.6,
+          1.1,
+          2.1,
+          3.4,
+          2.3
+        ],
+        [
+          6.1,
+          1.3,
+          2.8,
+          1.9,
+          1.4
+        ],
+        [
+          1.8,
+          1.7,
+          1.8,
+          2.8,
+          1.4
+        ]
+      ],
+      "firstTrialSnapshots": [
+        {
+          "text": "R",
+          "query": "",
+          "pending": true
+        },
+        {
+          "text": "Re",
+          "query": "",
+          "pending": true
+        },
+        {
+          "text": "Rea",
+          "query": "",
+          "pending": true
+        },
+        {
+          "text": "Reac",
+          "query": "",
+          "pending": true
+        },
+        {
+          "text": "React",
+          "query": "",
+          "pending": true
+        },
+        {
+          "text": "React",
+          "query": "React",
+          "pending": false
+        }
+      ]
+    }
+  ]
+}

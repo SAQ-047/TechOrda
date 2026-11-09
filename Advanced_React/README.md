@@ -14,10 +14,11 @@ npm ci
 | --- | --- | --- |
 | 01. Render и commit | `npm run dev:01` | http://127.0.0.1:5173/ |
 | 02. Чистота render | `npm run dev:02` | http://127.0.0.1:5174/ |
+| 03. Приоритет ввода | `npm run dev:03` | http://127.0.0.1:5175/ |
 
 Для одновременного запуска используйте два терминала. Внутри папки задания также работает `npm run dev`, используя общие зависимости.
 
-Сборка всех заданий: `npm run build`. Сборка одного: `npm run build --workspace=01-render-commit` или `npm run build --workspace=02-render-purity`. Просмотр production-сборок: `npm run preview:01` (порт 4173) и `npm run preview:02` (порт 4174).
+Сборка всех заданий: `npm run build`. Сборка одного: `npm run build --workspace=<имя-папки-задания>`. Просмотр production-сборок: `npm run preview:01` (порт 4173), `npm run preview:02` (порт 4174), `npm run preview:03` (порт 4175).
 
 Новые задания размещайте в папках `03-…`, `04-…` и далее: шаблон workspaces `[0-9][0-9]-*` подключает их автоматически. В их `package.json` достаточно имени, `private`, `type` и команд запуска/сборки. Общие библиотеки добавляйте в корневой `package.json`; устанавливайте зависимости из `Advanced_React`. Кеш Vite каждого задания направляйте в `../node_modules/.vite/<имя-папки>`, чтобы внутри заданий не создавались дополнительные `node_modules`.
 
@@ -25,3 +26,4 @@ npm ci
 
 1. [Render и commit на счётчике](01-render-commit/README.md) — первая самостоятельно запускаемая работа.
 2. [Чистота render и выбор курса](02-render-purity/README.md) — запись в localStorage только по клику.
+3. [Приоритет ввода через useTransition](03-input-transition/README.md) — срочный ввод и фоновое обновление дорогого списка.
