@@ -79,10 +79,12 @@ Preview: `http://127.0.0.1:4175/`. Для ручного сравнения вы
     "dev:01": "npm run dev --workspace=01-render-commit",
     "dev:02": "npm run dev --workspace=02-render-purity",
     "dev:03": "npm run dev --workspace=03-input-transition",
+    "dev:04": "npm run dev --workspace=04-deferred-results",
     "build": "npm run build --workspaces",
     "preview:01": "npm run preview --workspace=01-render-commit",
     "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition"
+    "preview:03": "npm run preview --workspace=03-input-transition",
+    "preview:04": "npm run preview --workspace=04-deferred-results"
   },
   "dependencies": {
     "react": "19.3.1",
