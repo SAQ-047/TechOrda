@@ -1,0 +1,40 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #202124;
+  background: #f6f7f8;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 900px; margin: 32px auto; padding: 0 16px; }
+h1 { font-size: 1.8rem; }
+fieldset { min-width: 0; margin: 0; padding: 12px 16px 16px; }
+fieldset, input, select, button, .course-list li {
+  border: 1px solid #68707a;
+  border-radius: 5px;
+}
+
+.filter-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: end;
+}
+
+label { display: grid; gap: 4px; }
+input, select, button {
+  min-width: 0;
+  font: inherit;
+  padding: 8px 12px;
+  background: white;
+  color: inherit;
+}
+
+button { cursor: pointer; }
+button:hover { background: #e8eef5; }
+:is(input, select, button):focus-visible { outline: 3px solid #185abc; outline-offset: 3px; }
+.course-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.course-list li { display: grid; padding: 8px 12px; background: white; }
+.course-list span { font-size: 0.875rem; }
+@media (max-width: 650px) { .filter-fields { grid-template-columns: 1fr; } }
