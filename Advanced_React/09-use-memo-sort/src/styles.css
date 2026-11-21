@@ -1,0 +1,23 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #202124;
+  background: #f6f7f8;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 900px; margin: 32px auto; padding: 0 16px; }
+h1 { font-size: 1.8rem; }
+h2 { margin-top: 0; font-size: 1.25rem; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+label { display: grid; gap: 4px; }
+select, button, section { border: 1px solid #68707a; border-radius: 5px; background: white; }
+select, button { font: inherit; padding: 8px 12px; color: inherit; }
+button { cursor: pointer; }
+button:hover { background: #e8eef5; }
+:is(select, button):focus-visible { outline: 3px solid #185abc; outline-offset: 3px; }
+.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+section { padding: 16px; }
+ol { margin-bottom: 0; padding-left: 24px; }
+@media (max-width: 650px) { .comparison { grid-template-columns: 1fr; } }

@@ -19,6 +19,7 @@
     "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "dev:07": "npm run dev --workspace=07-course-catalog-container",
     "dev:08": "npm run dev --workspace=08-lifted-course-filters",
+    "dev:09": "npm run dev --workspace=09-use-memo-sort",
     "build": "npm run build --workspaces",
     "preview:01": "npm run preview --workspace=01-render-commit-counter",
     "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
@@ -27,7 +28,8 @@
     "preview:05": "npm run preview --workspace=05-course-card-composition",
     "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters",
     "preview:07": "npm run preview --workspace=07-course-catalog-container",
-    "preview:08": "npm run preview --workspace=08-lifted-course-filters"
+    "preview:08": "npm run preview --workspace=08-lifted-course-filters",
+    "preview:09": "npm run preview --workspace=09-use-memo-sort"
   },
   "dependencies": {
     "react": "19.3.1",
