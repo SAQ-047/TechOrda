@@ -18,12 +18,13 @@ npm ci
 | 04. Отложенное значение и старый результат | [04-use-deferred-value-stale-results](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/04-use-deferred-value-stale-results) | `npm run dev:04` | http://127.0.0.1:5176/ |
 | 05. Карточка через композицию | [05-course-card-composition](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/05-course-card-composition) | `npm run dev:05` | http://127.0.0.1:5177/ |
 | 06. Управляемый и неуправляемый фильтр | [06-controlled-uncontrolled-filters](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/06-controlled-uncontrolled-filters) | `npm run dev:06` | http://127.0.0.1:5178/ |
+| 07. Контейнер каталога и представление | [07-course-catalog-container](https://github.com/SAQ-047/TechOrda/tree/react-07-course-catalog-container/Advanced_React/07-course-catalog-container) | `npm run dev:07` | http://127.0.0.1:5179/ |
 
 Для одновременного запуска используйте два терминала. Внутри папки задания также работает `npm run dev`, используя общие зависимости.
 
-Сборка всех заданий: `npm run build`. Сборка одного: `npm run build --workspace=<имя-папки-задания>`. Просмотр production-сборок: `npm run preview:01` (порт 4173), `npm run preview:02` (порт 4174), `npm run preview:03` (порт 4175), `npm run preview:04` (порт 4176), `npm run preview:05` (порт 4177), `npm run preview:06` (порт 4178).
+Сборка всех заданий: `npm run build`. Сборка одного: `npm run build --workspace=<имя-папки-задания>`. Просмотр production-сборок: `npm run preview:01` (порт 4173), `npm run preview:02` (порт 4174), `npm run preview:03` (порт 4175), `npm run preview:04` (порт 4176), `npm run preview:05` (порт 4177), `npm run preview:06` (порт 4178), `npm run preview:07` (порт 4179).
 
-Новые задания размещайте в папках `07-…`, `08-…` и далее: шаблон workspaces `[0-9][0-9]-*` подключает их автоматически. В их `package.json` достаточно имени, `private`, `type` и команд запуска/сборки. Общие библиотеки добавляйте в корневой `package.json`; устанавливайте зависимости из `Advanced_React`. Кеш Vite каждого задания направляйте в `../node_modules/.vite/<имя-папки>`, чтобы внутри заданий не создавались дополнительные `node_modules`.
+Новые задания размещайте в папках `08-…`, `09-…` и далее: шаблон workspaces `[0-9][0-9]-*` подключает их автоматически. В их `package.json` достаточно имени, `private`, `type` и команд запуска/сборки. Общие библиотеки добавляйте в корневой `package.json`; устанавливайте зависимости из `Advanced_React`. Кеш Vite каждого задания направляйте в `../node_modules/.vite/<имя-папки>`, чтобы внутри заданий не создавались дополнительные `node_modules`.
 
 ## Задания
 
@@ -33,5 +34,6 @@ npm ci
 4. [Отложенное значение и старый результат](04-use-deferred-value-stale-results/) · [Ответ для LMS](04-use-deferred-value-stale-results/LMS.md)
 5. [Карточка через композицию](05-course-card-composition/) · [Ответ для LMS](05-course-card-composition/LMS.md)
 6. [Управляемый и неуправляемый фильтр](06-controlled-uncontrolled-filters/) · [Ответ для LMS](06-controlled-uncontrolled-filters/LMS.md)
+7. [Контейнер каталога и представление](07-course-catalog-container/) · [Ответ для LMS](07-course-catalog-container/LMS.md)
 
 Имена папок имеют формат `NN-<тема-задания>`. В начале каждого `README.md` и `LMS.md` находится прямая ссылка на папку решения в GitHub. Учебные теги сохраняют структуру своего коммита; для текущих названий используйте ссылки на `main`.

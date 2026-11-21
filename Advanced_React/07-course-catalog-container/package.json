@@ -1,0 +1,11 @@
+{
+  "name": "techorda-07-course-catalog-container",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5179 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4179 --strictPort"
+  }
+}

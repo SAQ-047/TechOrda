@@ -17,13 +17,15 @@
     "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
     "dev:05": "npm run dev --workspace=05-course-card-composition",
     "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
+    "dev:07": "npm run dev --workspace=07-course-catalog-container",
     "build": "npm run build --workspaces",
     "preview:01": "npm run preview --workspace=01-render-commit-counter",
     "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
     "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
     "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
     "preview:05": "npm run preview --workspace=05-course-card-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters",
+    "preview:07": "npm run preview --workspace=07-course-catalog-container"
   },
   "dependencies": {
     "react": "19.3.1",

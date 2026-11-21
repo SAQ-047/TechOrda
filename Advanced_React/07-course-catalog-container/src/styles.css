@@ -1,0 +1,22 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #202124;
+  background: #f6f7f8;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 900px; margin: 32px auto; padding: 0 16px; }
+h1 { font-size: 1.8rem; }
+h2 { margin-top: 0; font-size: 1.25rem; }
+section { min-width: 0; padding: 16px; border: 1px solid #68707a; border-radius: 5px; }
+.examples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+label { display: flex; flex-direction: column; gap: 4px; max-width: 24rem; }
+input, button { min-width: 0; font: inherit; padding: 8px 12px; border: 1px solid #68707a; border-radius: 5px; background: white; color: inherit; }
+.course-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.course-list button { display: grid; width: 100%; text-align: left; cursor: pointer; }
+.course-list span { font-size: 0.875rem; }
+button:hover { background: #e8eef5; }
+:is(input, button):focus-visible { outline: 3px solid #185abc; outline-offset: 3px; }
+@media (max-width: 680px) { .examples { grid-template-columns: 1fr; } }
