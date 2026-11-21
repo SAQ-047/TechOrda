@@ -1,0 +1,24 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #202124;
+  background: #f6f7f8;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1120px; margin: 32px auto; padding: 0 16px; }
+h1 { font-size: 1.8rem; }
+h2 { margin-top: 0; font-size: 1.25rem; }
+button, section { border: 1px solid #68707a; border-radius: 5px; background: white; }
+button { font: inherit; padding: 8px 12px; color: inherit; }
+button:enabled { cursor: pointer; }
+button:enabled:hover { background: #e8eef5; }
+button:disabled { background: #e9eaec; }
+button:focus-visible { outline: 3px solid #185abc; outline-offset: 3px; }
+.comparison { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+section { padding: 16px; }
+.course-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.course-list button { display: grid; width: 100%; text-align: left; }
+.course-list span { font-size: 0.875rem; }
+@media (max-width: 760px) { .comparison { grid-template-columns: 1fr; } }
