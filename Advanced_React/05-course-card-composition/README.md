@@ -49,7 +49,7 @@ Preview: `http://127.0.0.1:4177/`. `npm run build` из `Advanced_React` соб�
 
 React / React DOM 19.3.1, Vite 8.3.6, @vitejs/plugin-react 6.3.0. Проверка на Node.js 20.20.2 и npm 10.9.4. Версии и дерево зависимостей закреплены в общих [package.json](../package.json) и [package-lock.json](../package-lock.json).
 
-Проверено 9 ноября 2026 года: `npm ci` и сборка всех пяти workspaces прошли. Браузерные сценарии выполнены отдельно через Playwright Core и установленный Brave; тестовый runner в приложение не добавлен.
+Проверено 9 ноября 2026 года: `npm ci` и сборка всех пяти workspaces прошли. Сценарии в Brave проверены через Playwright Core.
 
 | Проверка | Dev + StrictMode | Production |
 | --- | --- | --- |
@@ -71,11 +71,7 @@ React / React DOM 19.3.1, Vite 8.3.6, @vitejs/plugin-react 6.3.0. Проверк
 3. Переключите категории: Frontend показывает два курса, Fullstack и Quality — по одному, «Все направления» — четыре.
 4. Уменьшите окно до 320 px: длинный заголовок фильтра переносится, кнопки и содержимое остаются доступны.
 
-## Материалы для LMS
-
-Собственный HTML/CSS/JS/JSX — **97 непустых строк**: `index.html` — 13, `vite.config.js` — 7, `src/main.jsx` — 9, `src/Panel.jsx` — 13, `src/App.jsx` — 35, `src/styles.css` — 20. JSON, готовые fixtures, Markdown, зависимости и build в подсчёт не входят.
-
-Полный код и объяснение: [LMS.md](LMS.md). Проверяемый шаг в репозитории `TechOrda` отмечен тегом `react-05`; SHA можно получить командой `git rev-parse react-05`. Объём позволяет отправить решение прямо в LMS без обязательной публикации GitHub Pages.
+[Код и пояснение для LMS](LMS.md)
 
 ## Источники
 

@@ -57,7 +57,7 @@ Transition меняет приоритет работы, но не уменьш�
 
 React / React DOM 19.3.1, Vite 8.3.6, @vitejs/plugin-react 6.3.0. Проверка на Node.js 20.20.2 и npm 10.9.4. Версии закреплены в общем [package.json](../package.json), дерево зависимостей — в [package-lock.json](../package-lock.json).
 
-Общая установка `npm ci` и `npm run build` всех трёх заданий прошли. Тестовый runner в приложение не добавлен; браузерная проверка выполнялась отдельно через Playwright Core и установленный Brave.
+Команды `npm ci` и `npm run build` прошли. Сценарии в Brave проверены через Playwright Core.
 
 | Сценарий | Dev + StrictMode | Production |
 | --- | --- | --- |
@@ -70,11 +70,7 @@ React / React DOM 19.3.1, Vite 8.3.6, @vitejs/plugin-react 6.3.0. Проверк
 
 В проверке очистки во время pending сначала зафиксирован `text = TypeScript` с ещё пустым запросом старого списка; затем нажата «Очистить» до завершения transition. Устаревший непустой запрос не вернулся.
 
-## Материалы для LMS
-
-Собственный HTML/CSS/JS/JSX — **104 непустых строки**: `index.html` — 13, `vite.config.js` — 7, `src/main.jsx` — 9, `src/App.jsx` — 56, `src/styles.css` — 19. Markdown, JSON, зависимости и build в подсчёт не входят.
-
-Код и объяснение: [LMS.md](LMS.md). Репозиторий курса находится в родительской папке `TechOrda`. Проверяемый шаг отмечен тегом `react-03`; SHA можно получить командой `git rev-parse react-03` из корня репозитория. Объём решения позволяет отправить код прямо в LMS без обязательной публикации GitHub Pages.
+[Код и пояснение для LMS](LMS.md)
 
 ## Источники
 
