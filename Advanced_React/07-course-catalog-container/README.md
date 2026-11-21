@@ -1,6 +1,6 @@
 # 07. Контейнер каталога и представление
 
-[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/react-07-course-catalog-container/Advanced_React/07-course-catalog-container)
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/07-course-catalog-container)
 
 `CourseCatalog` хранит поисковый запрос и выбранный ID. При вводе он фильтрует локальный `courses.json` по части названия без учёта регистра и пробелов по краям запроса. Последний выбранный ID виден даже после смены фильтра.
 

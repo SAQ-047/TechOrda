@@ -18,12 +18,12 @@ npm ci
 | 04. Отложенное значение и старый результат | [04-use-deferred-value-stale-results](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/04-use-deferred-value-stale-results) | `npm run dev:04` | http://127.0.0.1:5176/ |
 | 05. Карточка через композицию | [05-course-card-composition](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/05-course-card-composition) | `npm run dev:05` | http://127.0.0.1:5177/ |
 | 06. Управляемый и неуправляемый фильтр | [06-controlled-uncontrolled-filters](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/06-controlled-uncontrolled-filters) | `npm run dev:06` | http://127.0.0.1:5178/ |
-| 07. Контейнер каталога и представление | [07-course-catalog-container](https://github.com/SAQ-047/TechOrda/tree/react-07-course-catalog-container/Advanced_React/07-course-catalog-container) | `npm run dev:07` | http://127.0.0.1:5179/ |
-| 08. Подъём состояния двух фильтров | [08-lifted-course-filters](https://github.com/SAQ-047/TechOrda/tree/react-08-lifted-course-filters/Advanced_React/08-lifted-course-filters) | `npm run dev:08` | http://127.0.0.1:5180/ |
-| 09. Цена useMemo | [09-use-memo-sort](https://github.com/SAQ-047/TechOrda/tree/react-09-use-memo-sort/Advanced_React/09-use-memo-sort) | `npm run dev:09` | http://127.0.0.1:5181/ |
-| 10. Стабильный callback и memo | [10-stable-callback-memo](https://github.com/SAQ-047/TechOrda/tree/react-10-stable-callback-memo/Advanced_React/10-stable-callback-memo) | `npm run dev:10` | http://127.0.0.1:5182/ |
-| 11. Custom hook избранных курсов | [11-use-favorites](https://github.com/SAQ-047/TechOrda/tree/react-11-use-favorites/Advanced_React/11-use-favorites) | `npm run dev:11` | http://127.0.0.1:5183/ |
-| 12. Review состояния небольшого dashboard | [12-dashboard-state-review](https://github.com/SAQ-047/TechOrda/tree/react-12-dashboard-state-review/Advanced_React/12-dashboard-state-review) | `npm run dev:12` | http://127.0.0.1:5184/ |
+| 07. Контейнер каталога и представление | [07-course-catalog-container](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/07-course-catalog-container) | `npm run dev:07` | http://127.0.0.1:5179/ |
+| 08. Подъём состояния двух фильтров | [08-lifted-course-filters](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/08-lifted-course-filters) | `npm run dev:08` | http://127.0.0.1:5180/ |
+| 09. Цена useMemo | [09-use-memo-sort](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/09-use-memo-sort) | `npm run dev:09` | http://127.0.0.1:5181/ |
+| 10. Стабильный callback и memo | [10-stable-callback-memo](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/10-stable-callback-memo) | `npm run dev:10` | http://127.0.0.1:5182/ |
+| 11. Custom hook избранных курсов | [11-use-favorites](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/11-use-favorites) | `npm run dev:11` | http://127.0.0.1:5183/ |
+| 12. Review состояния небольшого dashboard | [12-dashboard-state-review](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/12-dashboard-state-review) | `npm run dev:12` | http://127.0.0.1:5184/ |
 
 Для одновременного запуска используйте два терминала. Внутри папки задания также работает `npm run dev`, используя общие зависимости.
 

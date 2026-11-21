@@ -1,6 +1,6 @@
 # 08. Подъём состояния двух фильтров
 
-[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/react-08-lifted-course-filters/Advanced_React/08-lifted-course-filters)
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/08-lifted-course-filters)
 
 `App` — ближайший общий родитель панели `CourseFilters` и списка `CourseListView`. Он хранит `query` и `category` и передаёт панели текущие значения и обработчики. Кнопка «Сбросить фильтры» очищает строку поиска и выбирает «Все категории».
 

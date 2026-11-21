@@ -1,6 +1,6 @@
 # 10. Стабильный callback и memo
 
-[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/react-10-stable-callback-memo/Advanced_React/10-stable-callback-memo)
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/10-stable-callback-memo)
 
 `App` хранит общий список выбранных ID и отдельный счётчик. Три панели используют один `memo(CoursePicker)` и показывают одни и те же курсы из `courses.json`. Нажатие кнопки счётчика повторно вызывает `App` и позволяет сравнить пропсы каждой панели.
 

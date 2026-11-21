@@ -1,6 +1,6 @@
 # 12. Review состояния небольшого dashboard
 
-[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/react-12-dashboard-state-review/Advanced_React/12-dashboard-state-review)
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/12-dashboard-state-review)
 
 ## Владельцы состояния
 

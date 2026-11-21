@@ -1,6 +1,6 @@
 # 11. Custom hook избранных курсов
 
-[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/react-11-use-favorites/Advanced_React/11-use-favorites)
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/11-use-favorites)
 
 `useFavorites` возвращает `ids`, `toggle` и `clear`. `toggle(id)` получает актуальный массив через функциональное обновление `setIds`. Если ID уже есть, `filter` создаёт массив без него. Иначе ID добавляется в новый массив. Повторное нажатие снимает выбор, а `clear()` заменяет массив пустым.
 

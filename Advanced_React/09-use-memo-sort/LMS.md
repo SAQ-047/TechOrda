@@ -1,6 +1,6 @@
 # 09. Цена useMemo
 
-[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/react-09-use-memo-sort/Advanced_React/09-use-memo-sort)
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/09-use-memo-sort)
 
 Из четырёх записей `courses.json` один раз создаётся каталог из 2000 курсов. Порядковый номер делает каждый `id` уникальным и различает названия. Оба варианта сортируют весь каталог через `toSorted`, который возвращает новую копию. На экране показаны первые пять записей каждого результата.
 
