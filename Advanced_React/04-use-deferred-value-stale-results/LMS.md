@@ -1,5 +1,7 @@
 # 04. Отложенное значение и старый результат
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/04-use-deferred-value-stale-results).
+
 Сохранена лаборатория из условия: 240 вымышленных элементов React / CSS / TypeScript. В каждой отображаемой CourseCard остался цикл на 80 000 итераций, Results обёрнут в memo. В отдельной версии доступны обычный режим и useDeferredValue; по умолчанию включён useDeferredValue.
 
 ## Решение
@@ -34,7 +36,7 @@ npm run dev:04
 Production:
 
 ```bash
-npm run build --workspace=04-deferred-results
+npm run build --workspace=04-use-deferred-value-stale-results
 npm run preview:04
 ```
 
@@ -82,19 +84,19 @@ Preview: http://127.0.0.1:4176/. Для ручного наблюдения вы
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",
@@ -107,11 +109,11 @@ Preview: http://127.0.0.1:4176/. Для ручного наблюдения вы
 }
 ```
 
-### 04-deferred-results/package.json
+### 04-use-deferred-value-stale-results/package.json
 
 ```json
 {
-  "name": "techorda-04-deferred-results",
+  "name": "techorda-04-use-deferred-value-stale-results",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -123,7 +125,7 @@ Preview: http://127.0.0.1:4176/. Для ручного наблюдения вы
 }
 ```
 
-### 04-deferred-results/index.html
+### 04-use-deferred-value-stale-results/index.html
 
 ```html
 <!doctype html>
@@ -141,7 +143,7 @@ Preview: http://127.0.0.1:4176/. Для ручного наблюдения вы
 </html>
 ```
 
-### 04-deferred-results/vite.config.js
+### 04-use-deferred-value-stale-results/vite.config.js
 
 ```js
 import { defineConfig } from 'vite';
@@ -149,12 +151,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/04-deferred-results',
+  cacheDir: '../node_modules/.vite/04-use-deferred-value-stale-results',
   base: './',
 });
 ```
 
-### 04-deferred-results/src/main.jsx
+### 04-use-deferred-value-stale-results/src/main.jsx
 
 ```jsx
 import { StrictMode } from 'react';
@@ -169,7 +171,7 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 
-### 04-deferred-results/src/App.jsx
+### 04-use-deferred-value-stale-results/src/App.jsx
 
 ```jsx
 import { memo, useDeferredValue, useState } from 'react';
@@ -228,7 +230,7 @@ export default function App() {
 }
 ```
 
-### 04-deferred-results/src/styles.css
+### 04-use-deferred-value-stale-results/src/styles.css
 
 ```css
 :root {

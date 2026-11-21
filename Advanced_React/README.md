@@ -10,14 +10,14 @@
 npm ci
 ```
 
-| Задание | Запуск из Advanced_React | Адрес |
-| --- | --- | --- |
-| 01. Render и commit | `npm run dev:01` | http://127.0.0.1:5173/ |
-| 02. Чистота render | `npm run dev:02` | http://127.0.0.1:5174/ |
-| 03. Приоритет ввода | `npm run dev:03` | http://127.0.0.1:5175/ |
-| 04. Отложенные результаты | `npm run dev:04` | http://127.0.0.1:5176/ |
-| 05. Карточка через композицию | `npm run dev:05` | http://127.0.0.1:5177/ |
-| 06. Управляемый и неуправляемый фильтр | `npm run dev:06` | http://127.0.0.1:5178/ |
+| Задание | Папка решения на GitHub | Запуск | Локальный адрес |
+| --- | --- | --- | --- |
+| 01. Render и commit на счётчике | [01-render-commit-counter](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/01-render-commit-counter) | `npm run dev:01` | http://127.0.0.1:5173/ |
+| 02. Чистота render и выбор курса | [02-pure-render-course-selection](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/02-pure-render-course-selection) | `npm run dev:02` | http://127.0.0.1:5174/ |
+| 03. Приоритет ввода через useTransition | [03-use-transition-input-priority](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/03-use-transition-input-priority) | `npm run dev:03` | http://127.0.0.1:5175/ |
+| 04. Отложенное значение и старый результат | [04-use-deferred-value-stale-results](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/04-use-deferred-value-stale-results) | `npm run dev:04` | http://127.0.0.1:5176/ |
+| 05. Карточка через композицию | [05-course-card-composition](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/05-course-card-composition) | `npm run dev:05` | http://127.0.0.1:5177/ |
+| 06. Управляемый и неуправляемый фильтр | [06-controlled-uncontrolled-filters](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/06-controlled-uncontrolled-filters) | `npm run dev:06` | http://127.0.0.1:5178/ |
 
 Для одновременного запуска используйте два терминала. Внутри папки задания также работает `npm run dev`, используя общие зависимости.
 
@@ -27,9 +27,11 @@ npm ci
 
 ## Задания
 
-1. [Render и commit на счётчике](01-render-commit/README.md) — первая самостоятельно запускаемая работа.
-2. [Чистота render и выбор курса](02-render-purity/README.md) — запись в localStorage только по клику.
-3. [Приоритет ввода через useTransition](03-input-transition/README.md) — срочный ввод и фоновое обновление дорогого списка.
-4. [Отложенное значение и старый результат](04-deferred-results/README.md) — useDeferredValue и честная подпись прежних результатов.
-5. [Карточка через композицию](05-panel-composition/README.md) — общий Panel с title, children и необязательными actions.
-6. [Управляемый и неуправляемый фильтр](06-controlled-uncontrolled/README.md) — владелец значения input и явный внешний сброс.
+1. [Render и commit на счётчике](01-render-commit-counter/) · [Ответ для LMS](01-render-commit-counter/LMS.md)
+2. [Чистота render и выбор курса](02-pure-render-course-selection/) · [Ответ для LMS](02-pure-render-course-selection/LMS.md)
+3. [Приоритет ввода через useTransition](03-use-transition-input-priority/) · [Ответ для LMS](03-use-transition-input-priority/LMS.md)
+4. [Отложенное значение и старый результат](04-use-deferred-value-stale-results/) · [Ответ для LMS](04-use-deferred-value-stale-results/LMS.md)
+5. [Карточка через композицию](05-course-card-composition/) · [Ответ для LMS](05-course-card-composition/LMS.md)
+6. [Управляемый и неуправляемый фильтр](06-controlled-uncontrolled-filters/) · [Ответ для LMS](06-controlled-uncontrolled-filters/LMS.md)
+
+Имена папок имеют формат `NN-<тема-задания>`. В начале каждого `README.md` и `LMS.md` находится прямая ссылка на папку решения в GitHub. Учебные теги сохраняют структуру своего коммита; для текущих названий используйте ссылки на `main`.

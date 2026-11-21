@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/05-panel-composition',
+  cacheDir: '../node_modules/.vite/03-use-transition-input-priority',
   base: './',
 });

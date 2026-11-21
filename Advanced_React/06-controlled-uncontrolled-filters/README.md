@@ -1,5 +1,7 @@
 # 06. Управляемый и неуправляемый фильтр
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/06-controlled-uncontrolled-filters).
+
 Два фильтра одних и тех же четырёх курсов из локального `src/courses.json`. Оба поля начинают со строки `React`; сброс явно очищает запрос до `''` и возвращает все курсы. Зависимости общие с остальными заданиями.
 
 ## Запуск
@@ -11,12 +13,12 @@ npm ci
 npm run dev:06
 ```
 
-Dev: `http://127.0.0.1:5178/`. После общей установки внутри `06-controlled-uncontrolled` также работает `npm run dev`.
+Dev: `http://127.0.0.1:5178/`. После общей установки внутри `06-controlled-uncontrolled-filters` также работает `npm run dev`.
 
 Production:
 
 ```bash
-npm run build --workspace=06-controlled-uncontrolled
+npm run build --workspace=06-controlled-uncontrolled-filters
 npm run preview:06
 ```
 

@@ -1,5 +1,7 @@
 # 05. Карточка через композицию
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/05-course-card-composition).
+
 Реализован общий Panel с title, children и необязательным actions. Один и тот же компонент используется для фильтра и карточек четырёх вымышленных курсов из courses.json.
 
 ## Как устроена композиция
@@ -34,7 +36,7 @@ npm run dev:05
 Production:
 
 ```bash
-npm run build --workspace=05-panel-composition
+npm run build --workspace=05-course-card-composition
 npm run preview:05
 ```
 
@@ -75,19 +77,19 @@ Preview: http://127.0.0.1:4177/.
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",
@@ -100,11 +102,11 @@ Preview: http://127.0.0.1:4177/.
 }
 ```
 
-### 05-panel-composition/package.json
+### 05-course-card-composition/package.json
 
 ```json
 {
-  "name": "techorda-05-panel-composition",
+  "name": "techorda-05-course-card-composition",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -116,7 +118,7 @@ Preview: http://127.0.0.1:4177/.
 }
 ```
 
-### 05-panel-composition/index.html
+### 05-course-card-composition/index.html
 
 ```html
 <!doctype html>
@@ -134,7 +136,7 @@ Preview: http://127.0.0.1:4177/.
 </html>
 ```
 
-### 05-panel-composition/vite.config.js
+### 05-course-card-composition/vite.config.js
 
 ```js
 import { defineConfig } from 'vite';
@@ -142,12 +144,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/05-panel-composition',
+  cacheDir: '../node_modules/.vite/05-course-card-composition',
   base: './',
 });
 ```
 
-### 05-panel-composition/src/main.jsx
+### 05-course-card-composition/src/main.jsx
 
 ```jsx
 import { StrictMode } from 'react';
@@ -162,7 +164,7 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 
-### 05-panel-composition/src/Panel.jsx
+### 05-course-card-composition/src/Panel.jsx
 
 ```jsx
 import { useId } from 'react';
@@ -181,7 +183,7 @@ export default function Panel({ title, children, actions }) {
 }
 ```
 
-### 05-panel-composition/src/courses.json
+### 05-course-card-composition/src/courses.json
 
 ```json
 [
@@ -192,7 +194,7 @@ export default function Panel({ title, children, actions }) {
 ]
 ```
 
-### 05-panel-composition/src/App.jsx
+### 05-course-card-composition/src/App.jsx
 
 ```jsx
 import { useState } from 'react';
@@ -234,7 +236,7 @@ export default function App() {
 }
 ```
 
-### 05-panel-composition/src/styles.css
+### 05-course-card-composition/src/styles.css
 
 ```css
 :root {

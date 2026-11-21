@@ -1,5 +1,7 @@
 # 03. Приоритет ввода через useTransition
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/03-use-transition-input-priority).
+
 Самостоятельная версия лаборатории поиска из условия. Данные и нагрузка одинаковы в обоих режимах: 240 вымышленных элементов `React / CSS / TypeScript`, по 80 000 итераций в каждой отображаемой карточке. Массив создаётся вне компонента; расчёт checksum остаётся в `CourseCard`, а граница `memo` — вокруг `Results`.
 
 ## Запуск
@@ -11,12 +13,12 @@ npm ci
 npm run dev:03
 ```
 
-Адрес: `http://127.0.0.1:5175/`. Внутри `03-input-transition` после общей установки также работает `npm run dev`.
+Адрес: `http://127.0.0.1:5175/`. Внутри `03-use-transition-input-priority` после общей установки также работает `npm run dev`.
 
 Production-сборка и preview из `Advanced_React`:
 
 ```bash
-npm run build --workspace=03-input-transition
+npm run build --workspace=03-use-transition-input-priority
 npm run preview:03
 ```
 

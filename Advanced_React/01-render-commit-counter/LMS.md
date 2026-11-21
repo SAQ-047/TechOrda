@@ -1,5 +1,7 @@
 # 01. Render и commit на счётчике
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/01-render-commit-counter).
+
 Реализован родитель со счётчиком и обычный дочерний компонент без `memo`. Ребёнок выводит изменяемый `title` и постоянный текст. Для повторного монтажа меняется `key`.
 
 ## Объяснение результата
@@ -14,7 +16,7 @@
 
 React / React DOM 19.3.1, Vite 8.3.6, @vitejs/plugin-react 6.3.0. Проверено на Node.js 20.20.2 и npm 10.9.4. Требование Vite к Node.js: `^20.19.0 || >=22.12.0`.
 
-Сохраните общий `package.json` в корне `Advanced_React`, файлы задания — в подпапке `01-render-commit` по указанным ниже путям. При создании проекта из этого текста выполните из `Advanced_React`:
+Сохраните общий `package.json` в корне `Advanced_React`, файлы задания — в подпапке `01-render-commit-counter` по указанным ниже путям. При создании проекта из этого текста выполните из `Advanced_React`:
 
 ```bash
 npm install
@@ -28,7 +30,7 @@ npm run dev:01
 Проверка production:
 
 ```bash
-npm run build --workspace=01-render-commit
+npm run build --workspace=01-render-commit-counter
 npm run preview:01
 ```
 
@@ -62,19 +64,19 @@ npm run preview:01
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",
@@ -87,11 +89,11 @@ npm run preview:01
 }
 ```
 
-### 01-render-commit/package.json
+### 01-render-commit-counter/package.json
 
 ```json
 {
-  "name": "techorda-01-render-commit",
+  "name": "techorda-01-render-commit-counter",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -103,7 +105,7 @@ npm run preview:01
 }
 ```
 
-### 01-render-commit/index.html
+### 01-render-commit-counter/index.html
 
 ```html
 <!doctype html>
@@ -121,7 +123,7 @@ npm run preview:01
 </html>
 ```
 
-### 01-render-commit/vite.config.js
+### 01-render-commit-counter/vite.config.js
 
 ```js
 import { defineConfig } from 'vite';
@@ -129,12 +131,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/01-render-commit',
+  cacheDir: '../node_modules/.vite/01-render-commit-counter',
   base: './',
 });
 ```
 
-### 01-render-commit/src/main.jsx
+### 01-render-commit-counter/src/main.jsx
 
 ```jsx
 import { StrictMode } from 'react';
@@ -149,7 +151,7 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 
-### 01-render-commit/src/App.jsx
+### 01-render-commit-counter/src/App.jsx
 
 ```jsx
 import { useEffect, useRef, useState } from 'react';
@@ -219,7 +221,7 @@ export default function App() {
 }
 ```
 
-### 01-render-commit/src/styles.css
+### 01-render-commit-counter/src/styles.css
 
 ```css
 :root {

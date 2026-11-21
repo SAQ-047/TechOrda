@@ -1,5 +1,7 @@
 # 02. Чистота render и выбор курса
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/02-pure-render-course-selection).
+
 Самостоятельный React-пример: четыре курса из `src/courses.json`, кнопка «Выбрать» на каждой карточке и проверочное обновление родителя. Задание 01 сохранено отдельно.
 
 ## Запуск
@@ -16,7 +18,7 @@ npm run dev:02
 Production-сборка:
 
 ```bash
-npm run build --workspace=02-render-purity
+npm run build --workspace=02-pure-render-course-selection
 npm run preview:02
 ```
 
@@ -76,7 +78,7 @@ localStorage.getItem('selected-course');
 
 ## Результат проверки
 
-Проверено 9 ноября 2026 года. Установка `npm ci` из корня и `npm run build --workspace=02-render-purity` завершились успешно.
+Проверено 9 ноября 2026 года. Установка `npm ci` из корня и `npm run build --workspace=02-pure-render-course-selection` завершились успешно.
 
 Браузерная проверка выполнялась через Playwright Core и установленный Brave. До загрузки React перехватывались `Storage.prototype.setItem`, `removeItem` и `clear`. Для каждого сценария использовался отдельный браузерный контекст.
 

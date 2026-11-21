@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/06-controlled-uncontrolled',
+  cacheDir: '../node_modules/.vite/05-course-card-composition',
   base: './',
 });

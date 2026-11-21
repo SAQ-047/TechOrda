@@ -11,19 +11,19 @@
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",

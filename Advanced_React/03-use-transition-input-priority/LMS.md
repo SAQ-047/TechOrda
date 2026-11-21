@@ -1,5 +1,7 @@
 # 03. Приоритет ввода через useTransition
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/03-use-transition-input-priority).
+
 Взята лаборатория поиска из условия: 240 вымышленных элементов `React / CSS / TypeScript`. В каждой отображаемой `CourseCard` сохранён цикл из 80 000 итераций, результат checksum выводится в DOM. `Results` обёрнут в `memo`; в обоих режимах используются те же данные, карточки и фильтрация.
 
 ## Реализация
@@ -41,7 +43,7 @@ npm run dev:03
 Production:
 
 ```bash
-npm run build --workspace=03-input-transition
+npm run build --workspace=03-use-transition-input-priority
 npm run preview:03
 ```
 
@@ -76,19 +78,19 @@ Preview: `http://127.0.0.1:4175/`. Для ручного сравнения вы
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",
@@ -101,11 +103,11 @@ Preview: `http://127.0.0.1:4175/`. Для ручного сравнения вы
 }
 ```
 
-### 03-input-transition/package.json
+### 03-use-transition-input-priority/package.json
 
 ```json
 {
-  "name": "techorda-03-input-transition",
+  "name": "techorda-03-use-transition-input-priority",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -117,7 +119,7 @@ Preview: `http://127.0.0.1:4175/`. Для ручного сравнения вы
 }
 ```
 
-### 03-input-transition/index.html
+### 03-use-transition-input-priority/index.html
 
 ```html
 <!doctype html>
@@ -135,7 +137,7 @@ Preview: `http://127.0.0.1:4175/`. Для ручного сравнения вы
 </html>
 ```
 
-### 03-input-transition/vite.config.js
+### 03-use-transition-input-priority/vite.config.js
 
 ```js
 import { defineConfig } from 'vite';
@@ -143,12 +145,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/03-input-transition',
+  cacheDir: '../node_modules/.vite/03-use-transition-input-priority',
   base: './',
 });
 ```
 
-### 03-input-transition/src/main.jsx
+### 03-use-transition-input-priority/src/main.jsx
 
 ```jsx
 import { StrictMode } from 'react';
@@ -163,7 +165,7 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 
-### 03-input-transition/src/App.jsx
+### 03-use-transition-input-priority/src/App.jsx
 
 ```jsx
 import { memo, useState, useTransition } from 'react';
@@ -230,7 +232,7 @@ export default function App() {
 }
 ```
 
-### 03-input-transition/src/styles.css
+### 03-use-transition-input-priority/src/styles.css
 
 ```css
 :root {

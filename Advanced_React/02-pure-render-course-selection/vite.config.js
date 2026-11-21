@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/04-deferred-results',
+  cacheDir: '../node_modules/.vite/02-pure-render-course-selection',
   base: './',
 });

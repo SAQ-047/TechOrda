@@ -1,5 +1,7 @@
 # 02. Чистота render и выбор курса
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/02-pure-render-course-selection).
+
 Исправлен кейс `render-side-effect`: запись `localStorage.setItem('selected-course', course.id)` удалена из тела карточки. Теперь она выполняется в `handleSelect`, который вызывается только кнопкой «Выбрать». Использованы четыре вымышленных курса из условия.
 
 ## Как работает решение
@@ -18,7 +20,7 @@
 
 React / React DOM 19.3.1, Vite 8.3.6, @vitejs/plugin-react 6.3.0. Проверено на Node.js 20.20.2 и npm 10.9.4. Требование Vite к Node.js: `^20.19.0 || >=22.12.0`.
 
-Сохраните общий `package.json` в корне `Advanced_React`, файлы задания — в подпапке `02-render-purity` по указанным ниже путям. При создании проекта из текста выполните из `Advanced_React`:
+Сохраните общий `package.json` в корне `Advanced_React`, файлы задания — в подпапке `02-pure-render-course-selection` по указанным ниже путям. При создании проекта из текста выполните из `Advanced_React`:
 
 ```bash
 npm install
@@ -30,7 +32,7 @@ npm run dev:02
 Проверка production:
 
 ```bash
-npm run build --workspace=02-render-purity
+npm run build --workspace=02-pure-render-course-selection
 npm run preview:02
 ```
 
@@ -74,19 +76,19 @@ localStorage.getItem('selected-course');
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",
@@ -99,11 +101,11 @@ localStorage.getItem('selected-course');
 }
 ```
 
-### 02-render-purity/package.json
+### 02-pure-render-course-selection/package.json
 
 ```json
 {
-  "name": "techorda-02-render-purity",
+  "name": "techorda-02-pure-render-course-selection",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -115,7 +117,7 @@ localStorage.getItem('selected-course');
 }
 ```
 
-### 02-render-purity/index.html
+### 02-pure-render-course-selection/index.html
 
 ```html
 <!doctype html>
@@ -133,7 +135,7 @@ localStorage.getItem('selected-course');
 </html>
 ```
 
-### 02-render-purity/vite.config.js
+### 02-pure-render-course-selection/vite.config.js
 
 ```js
 import { defineConfig } from 'vite';
@@ -141,12 +143,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/02-render-purity',
+  cacheDir: '../node_modules/.vite/02-pure-render-course-selection',
   base: './',
 });
 ```
 
-### 02-render-purity/src/main.jsx
+### 02-pure-render-course-selection/src/main.jsx
 
 ```jsx
 import { StrictMode } from 'react';
@@ -161,7 +163,7 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 
-### 02-render-purity/src/courses.json
+### 02-pure-render-course-selection/src/courses.json
 
 ```json
 [
@@ -172,7 +174,7 @@ createRoot(document.getElementById('root')).render(
 ]
 ```
 
-### 02-render-purity/src/App.jsx
+### 02-pure-render-course-selection/src/App.jsx
 
 ```jsx
 import { useState } from 'react';
@@ -216,7 +218,7 @@ export default function App() {
 }
 ```
 
-### 02-render-purity/src/styles.css
+### 02-pure-render-course-selection/src/styles.css
 
 ```css
 :root {

@@ -1,5 +1,7 @@
 # 05. Карточка через композицию
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/05-course-card-composition).
+
 Один компонент `Panel` используется для фильтра и всех карточек курсов. Данные импортируются из локального `src/courses.json`. Пример использует общие зависимости курса; предыдущие задания сохранены отдельно.
 
 ## Запуск
@@ -11,12 +13,12 @@ npm ci
 npm run dev:05
 ```
 
-Адрес: `http://127.0.0.1:5177/`. После общей установки внутри `05-panel-composition` также работает `npm run dev`.
+Адрес: `http://127.0.0.1:5177/`. После общей установки внутри `05-course-card-composition` также работает `npm run dev`.
 
 Production:
 
 ```bash
-npm run build --workspace=05-panel-composition
+npm run build --workspace=05-course-card-composition
 npm run preview:05
 ```
 

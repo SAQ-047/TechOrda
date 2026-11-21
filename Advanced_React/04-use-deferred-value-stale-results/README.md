@@ -1,5 +1,7 @@
 # 04. Отложенное значение и старый результат
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/04-use-deferred-value-stale-results).
+
 Отдельная версия той же лаборатории: 240 вымышленных элементов `React / CSS / TypeScript`, по 80 000 итераций в каждой показанной `CourseCard`. Сохранены нагрузка внутри отдельных карточек и `memo` вокруг списка `Results`. По умолчанию включён режим `useDeferredValue`; обычный режим доступен для сравнения.
 
 ## Запуск
@@ -11,12 +13,12 @@ npm ci
 npm run dev:04
 ```
 
-Адрес: `http://127.0.0.1:5176/`. После общей установки внутри `04-deferred-results` также работает `npm run dev`.
+Адрес: `http://127.0.0.1:5176/`. После общей установки внутри `04-use-deferred-value-stale-results` также работает `npm run dev`.
 
 Production:
 
 ```bash
-npm run build --workspace=04-deferred-results
+npm run build --workspace=04-use-deferred-value-stale-results
 npm run preview:04
 ```
 

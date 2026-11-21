@@ -1,5 +1,7 @@
 # 06. Управляемый и неуправляемый фильтр
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/06-controlled-uncontrolled-filters).
+
 Два фильтра одного локального набора courses.json. Оба поля начинают со строки React. Управляемый фильтр обновляет список при вводе; неуправляемый читает DOM-значение через ref по кнопке «Применить».
 
 ## Владелец значения и внешний сброс
@@ -34,7 +36,7 @@ npm run dev:06
 Production:
 
 ```bash
-npm run build --workspace=06-controlled-uncontrolled
+npm run build --workspace=06-controlled-uncontrolled-filters
 npm run preview:06
 ```
 
@@ -76,19 +78,19 @@ Preview: http://127.0.0.1:4178/.
     "[0-9][0-9]-*"
   ],
   "scripts": {
-    "dev:01": "npm run dev --workspace=01-render-commit",
-    "dev:02": "npm run dev --workspace=02-render-purity",
-    "dev:03": "npm run dev --workspace=03-input-transition",
-    "dev:04": "npm run dev --workspace=04-deferred-results",
-    "dev:05": "npm run dev --workspace=05-panel-composition",
-    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled",
+    "dev:01": "npm run dev --workspace=01-render-commit-counter",
+    "dev:02": "npm run dev --workspace=02-pure-render-course-selection",
+    "dev:03": "npm run dev --workspace=03-use-transition-input-priority",
+    "dev:04": "npm run dev --workspace=04-use-deferred-value-stale-results",
+    "dev:05": "npm run dev --workspace=05-course-card-composition",
+    "dev:06": "npm run dev --workspace=06-controlled-uncontrolled-filters",
     "build": "npm run build --workspaces",
-    "preview:01": "npm run preview --workspace=01-render-commit",
-    "preview:02": "npm run preview --workspace=02-render-purity",
-    "preview:03": "npm run preview --workspace=03-input-transition",
-    "preview:04": "npm run preview --workspace=04-deferred-results",
-    "preview:05": "npm run preview --workspace=05-panel-composition",
-    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled"
+    "preview:01": "npm run preview --workspace=01-render-commit-counter",
+    "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
+    "preview:03": "npm run preview --workspace=03-use-transition-input-priority",
+    "preview:04": "npm run preview --workspace=04-use-deferred-value-stale-results",
+    "preview:05": "npm run preview --workspace=05-course-card-composition",
+    "preview:06": "npm run preview --workspace=06-controlled-uncontrolled-filters"
   },
   "dependencies": {
     "react": "19.3.1",
@@ -101,11 +103,11 @@ Preview: http://127.0.0.1:4178/.
 }
 ```
 
-### 06-controlled-uncontrolled/package.json
+### 06-controlled-uncontrolled-filters/package.json
 
 ```json
 {
-  "name": "techorda-06-controlled-uncontrolled",
+  "name": "techorda-06-controlled-uncontrolled-filters",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -117,7 +119,7 @@ Preview: http://127.0.0.1:4178/.
 }
 ```
 
-### 06-controlled-uncontrolled/index.html
+### 06-controlled-uncontrolled-filters/index.html
 
 ```html
 <!doctype html>
@@ -135,7 +137,7 @@ Preview: http://127.0.0.1:4178/.
 </html>
 ```
 
-### 06-controlled-uncontrolled/vite.config.js
+### 06-controlled-uncontrolled-filters/vite.config.js
 
 ```js
 import { defineConfig } from 'vite';
@@ -143,12 +145,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  cacheDir: '../node_modules/.vite/06-controlled-uncontrolled',
+  cacheDir: '../node_modules/.vite/06-controlled-uncontrolled-filters',
   base: './',
 });
 ```
 
-### 06-controlled-uncontrolled/src/main.jsx
+### 06-controlled-uncontrolled-filters/src/main.jsx
 
 ```jsx
 import { StrictMode } from 'react';
@@ -163,7 +165,7 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 
-### 06-controlled-uncontrolled/src/courses.json
+### 06-controlled-uncontrolled-filters/src/courses.json
 
 ```json
 [
@@ -174,7 +176,7 @@ createRoot(document.getElementById('root')).render(
 ]
 ```
 
-### 06-controlled-uncontrolled/src/App.jsx
+### 06-controlled-uncontrolled-filters/src/App.jsx
 
 ```jsx
 import { useRef, useState } from 'react';
@@ -247,7 +249,7 @@ export default function App() {
 }
 ```
 
-### 06-controlled-uncontrolled/src/styles.css
+### 06-controlled-uncontrolled-filters/src/styles.css
 
 ```css
 :root {

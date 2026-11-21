@@ -1,5 +1,7 @@
 # 01. Render и commit на счётчике
 
+[Папка решения на GitHub](https://github.com/SAQ-047/TechOrda/tree/main/Advanced_React/01-render-commit-counter).
+
 Самостоятельный пример для первой работы курса «Продвинутый React». Родитель хранит счётчик и `title`, ребёнок выводит заголовок и постоянный текст. Кнопка перемонтирования меняет `key` ребёнка, вызывая настоящее удаление старого экземпляра и создание нового.
 
 ## Запуск
@@ -16,7 +18,7 @@ npm run dev:01
 Для production:
 
 ```bash
-npm run build --workspace=01-render-commit
+npm run build --workspace=01-render-commit-counter
 npm run preview:01
 ```
 
@@ -72,7 +74,7 @@ Vite требует Node.js `^20.19.0 || >=22.12.0`. В окружении с д
 Проверено 9 ноября 2026 года:
 
 - `npm ci` — установка по lockfile успешна.
-- `npm run build --workspace=01-render-commit` — production-сборка успешна.
+- `npm run build --workspace=01-render-commit-counter` — production-сборка успешна.
 - Браузерные сценарии через Playwright Core и установленный Brave — PASS в dev и production, ошибок JavaScript и загрузки ресурсов нет.
 
 | Проверка в браузере | Dev + StrictMode | Production |
