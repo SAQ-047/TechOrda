@@ -23,12 +23,13 @@ npm ci
 | 09. Цена useMemo | [09-use-memo-sort](https://github.com/SAQ-047/TechOrda/tree/react-09-use-memo-sort/Advanced_React/09-use-memo-sort) | `npm run dev:09` | http://127.0.0.1:5181/ |
 | 10. Стабильный callback и memo | [10-stable-callback-memo](https://github.com/SAQ-047/TechOrda/tree/react-10-stable-callback-memo/Advanced_React/10-stable-callback-memo) | `npm run dev:10` | http://127.0.0.1:5182/ |
 | 11. Custom hook избранных курсов | [11-use-favorites](https://github.com/SAQ-047/TechOrda/tree/react-11-use-favorites/Advanced_React/11-use-favorites) | `npm run dev:11` | http://127.0.0.1:5183/ |
+| 12. Review состояния небольшого dashboard | [12-dashboard-state-review](https://github.com/SAQ-047/TechOrda/tree/react-12-dashboard-state-review/Advanced_React/12-dashboard-state-review) | `npm run dev:12` | http://127.0.0.1:5184/ |
 
 Для одновременного запуска используйте два терминала. Внутри папки задания также работает `npm run dev`, используя общие зависимости.
 
-Сборка всех заданий: `npm run build`. Сборка одного: `npm run build --workspace=<имя-папки-задания>`. Просмотр production-сборок: `npm run preview:01` (порт 4173), `npm run preview:02` (порт 4174), `npm run preview:03` (порт 4175), `npm run preview:04` (порт 4176), `npm run preview:05` (порт 4177), `npm run preview:06` (порт 4178), `npm run preview:07` (порт 4179), `npm run preview:08` (порт 4180), `npm run preview:09` (порт 4181), `npm run preview:10` (порт 4182), `npm run preview:11` (порт 4183).
+Сборка всех заданий: `npm run build`. Сборка одного: `npm run build --workspace=<имя-папки-задания>`. Просмотр production-сборок: `npm run preview:01` (порт 4173), `npm run preview:02` (порт 4174), `npm run preview:03` (порт 4175), `npm run preview:04` (порт 4176), `npm run preview:05` (порт 4177), `npm run preview:06` (порт 4178), `npm run preview:07` (порт 4179), `npm run preview:08` (порт 4180), `npm run preview:09` (порт 4181), `npm run preview:10` (порт 4182), `npm run preview:11` (порт 4183), `npm run preview:12` (порт 4184).
 
-Новые задания размещайте в папках `12-…`, `13-…` и далее: шаблон workspaces `[0-9][0-9]-*` подключает их автоматически. В их `package.json` достаточно имени, `private`, `type` и команд запуска/сборки. Общие библиотеки добавляйте в корневой `package.json`; устанавливайте зависимости из `Advanced_React`. Кеш Vite каждого задания направляйте в `../node_modules/.vite/<имя-папки>`, чтобы внутри заданий не создавались дополнительные `node_modules`.
+Новые задания размещайте в папках `13-…`, `14-…` и далее: шаблон workspaces `[0-9][0-9]-*` подключает их автоматически. В их `package.json` достаточно имени, `private`, `type` и команд запуска/сборки. Общие библиотеки добавляйте в корневой `package.json`; устанавливайте зависимости из `Advanced_React`. Кеш Vite каждого задания направляйте в `../node_modules/.vite/<имя-папки>`, чтобы внутри заданий не создавались дополнительные `node_modules`.
 
 ## Задания
 
@@ -43,5 +44,6 @@ npm ci
 9. [Цена useMemo](09-use-memo-sort/) · [Ответ для LMS](09-use-memo-sort/LMS.md)
 10. [Стабильный callback и memo](10-stable-callback-memo/) · [Ответ для LMS](10-stable-callback-memo/LMS.md)
 11. [Custom hook избранных курсов](11-use-favorites/) · [Ответ для LMS](11-use-favorites/LMS.md)
+12. [Review состояния небольшого dashboard](12-dashboard-state-review/) · [Ответ для LMS](12-dashboard-state-review/LMS.md)
 
 Имена папок имеют формат `NN-<тема-задания>`. В начале каждого `README.md` и `LMS.md` находится прямая ссылка на папку решения в GitHub. Учебные теги сохраняют структуру своего коммита; для текущих названий используйте ссылки на `main`.

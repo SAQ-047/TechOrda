@@ -22,6 +22,7 @@
     "dev:09": "npm run dev --workspace=09-use-memo-sort",
     "dev:10": "npm run dev --workspace=10-stable-callback-memo",
     "dev:11": "npm run dev --workspace=11-use-favorites",
+    "dev:12": "npm run dev --workspace=12-dashboard-state-review",
     "build": "npm run build --workspaces",
     "preview:01": "npm run preview --workspace=01-render-commit-counter",
     "preview:02": "npm run preview --workspace=02-pure-render-course-selection",
@@ -33,7 +34,8 @@
     "preview:08": "npm run preview --workspace=08-lifted-course-filters",
     "preview:09": "npm run preview --workspace=09-use-memo-sort",
     "preview:10": "npm run preview --workspace=10-stable-callback-memo",
-    "preview:11": "npm run preview --workspace=11-use-favorites"
+    "preview:11": "npm run preview --workspace=11-use-favorites",
+    "preview:12": "npm run preview --workspace=12-dashboard-state-review"
   },
   "dependencies": {
     "react": "19.3.1",

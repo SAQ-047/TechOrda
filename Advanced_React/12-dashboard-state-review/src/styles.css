@@ -1,0 +1,30 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #202124;
+  background: #f6f7f8;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1000px; margin: 32px auto; padding: 0 16px; }
+h1 { font-size: 1.8rem; }
+h2 { margin-top: 0; font-size: 1.25rem; }
+h3 { font-size: 1rem; }
+button, input, section { border: 1px solid #68707a; border-radius: 5px; background: white; }
+button, input { min-width: 0; font: inherit; padding: 8px 12px; color: inherit; }
+button:enabled { cursor: pointer; }
+button:enabled:hover { background: #e8eef5; }
+button:disabled { color: #68707a; }
+button:is([aria-current="true"], [aria-pressed="true"]) { border-color: #185abc; background: #e8eef5; }
+:is(button, input):focus-visible { outline: 3px solid #185abc; outline-offset: 3px; }
+.dashboard { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; align-items: start; }
+.sidebar, .course-list { display: grid; gap: 12px; }
+section { padding: 16px; }
+.search { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; }
+.search label { display: grid; gap: 4px; flex: 1 1 12rem; min-width: 0; }
+.course-list { margin: 0; padding: 0; list-style: none; }
+.course-list li { display: flex; flex-wrap: wrap; gap: 8px; }
+.course-choice { display: grid; text-align: left; flex: 1 1 13rem; }
+.course-choice span { font-size: 0.875rem; }
+@media (max-width: 700px) { .dashboard { grid-template-columns: 1fr; } }
